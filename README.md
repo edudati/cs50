@@ -6,8 +6,8 @@
 <p align="center">
  <a href="https://github.com/edudati/cs50/tree/main/pset1">pset1</a> |
  <a href="https://github.com/edudati/cs50/tree/main/pset2">pset2</a> | 
- <a href="https://github.com/edudati/cs50/tree/main/pset1">pset3</a> |
- <a href="#https://github.com/edudati/cs50/tree/main/pset1">pset4</a> 
+ <a href="https://github.com/edudati/cs50/tree/main/pset3">pset3</a> |
+ <a href="https://github.com/edudati/cs50/tree/main/pset4">pset4</a> 
 </p>
 
 
