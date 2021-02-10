@@ -4,10 +4,10 @@
 	The course is in progress. Currently in problem 5.
 </h4>
 <p align="center">
- <a href="#pset1">pset1</a> •
- <a href="#pset2">pset2</a> • 
- <a href="#pset3">pset3</a> • 
- <a href="#pset4">pset4</a> •
+ <a href="https://github.com/edudati/cs50/tree/main/pset1">pset1</a> |
+ <a href="https://github.com/edudati/cs50/tree/main/pset2">pset2</a> | 
+ <a href="https://github.com/edudati/cs50/tree/main/pset1">pset3</a> |
+ <a href="#https://github.com/edudati/cs50/tree/main/pset1">pset4</a> 
 </p>
 
 
