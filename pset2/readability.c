@@ -5,31 +5,31 @@
 
 int main(void)
 {
-    int l = 0;
-    int w = 0;
-    int p = 0;
-    string s = get_string("Text: ");
-    for (int i = 0, n = strlen(s); i < n; i++)
+    int letter = 0;
+    int word = 0;
+    int point = 0;
+    string sentence = get_string("Text: ");
+    for (int i = 0, n = strlen(sentence); i < n; i++)
     {
         //printf("%c\n", s[i]);
-        if (isalpha(s[i]))
+        if (isalpha(sentence[i]))
         {
-            l++;
+            letter++;
         }
-        if (isspace(s[i]))
+        if (isspace(sentence[i]))
         {
-            w++;
+            word++;
         }
-        if (s[i] == '.' || s[i] == '!' || s[i] == '?')
+        if (sentence[i] == '.' || sentence[i] == '!' || sentence[i] == '?')
         {
-            p++;;
+            point++;;
         }
     }
-    if (l > 0)
+    if (letter > 0)
     {
-        w++;
+        word++;
     }
-    float index = 0.0588 * ((float)l / (float)w * 100) - 0.296 * ((float)p / (float)w * 100) - 15.8;
+    float index = 0.0588 * ((float)letter / (float)word * 100) - 0.296 * ((float)point / (float)word * 100) - 15.8;
     if (index < 1)
     {
         printf("Before Grade 1\n");
