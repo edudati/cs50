@@ -5,13 +5,16 @@
 
 int main(void)
 {
+    // Prompt for string of text
+    string sentence = get_string("Text: ");
+    
     int letter = 0;
     int word = 0;
-    int point = 0;
-    string sentence = get_string("Text: ");
+    int period = 0;
+    
+    // Check any character and count letters, words and periods
     for (int i = 0, n = strlen(sentence); i < n; i++)
     {
-        //printf("%c\n", s[i]);
         if (isalpha(sentence[i]))
         {
             letter++;
@@ -22,14 +25,20 @@ int main(void)
         }
         if (sentence[i] == '.' || sentence[i] == '!' || sentence[i] == '?')
         {
-            point++;;
+            period++;;
         }
     }
+    
+    // Count the first word that do not need any space
     if (letter > 0)
     {
         word++;
     }
-    float index = 0.0588 * ((float)letter / (float)word * 100) - 0.296 * ((float)point / (float)word * 100) - 15.8;
+    
+    // Apply Coleman-Liau index
+    float index = 0.0588 * ((float)letter / (float)word * 100) - 0.296 * ((float)period / (float)word * 100) - 15.8;
+    
+    // Classify sentence
     if (index < 1)
     {
         printf("Before Grade 1\n");
