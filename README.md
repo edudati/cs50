@@ -1,7 +1,7 @@
 <h1 align="center">CS50</h1>
 <p align="center">My solutions to the Harvard CS50 course. Introduction to computer science</p>
 <h4 align="center"> 
-	The course is in progress. Currently in problem 5.
+	The course is in progress. Currently I'm doing the new problems of CS50 2021.
 </h4>
 <p align="center">
  <a href="https://github.com/edudati/cs50/tree/main/pset1">pset1</a> |
