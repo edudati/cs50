@@ -5,7 +5,7 @@
 
 int main(int argc, string argv[])
 {
-    //verify 2 arg
+    //verify if have 2 arguments
     if (argc != 2)
     {
         printf("Usage: ./substitution key\n");
@@ -54,19 +54,19 @@ int main(int argc, string argv[])
     }
 
     // substitution code
-    string s = get_string("plaintext:  ");
+    string plain = get_string("plaintext:  ");
     printf("ciphertext: ");
-    for (int i = 0, j = strlen(s); i < j; i++)
+    for (int i = 0, j = strlen(plain); i < j; i++)
     {
-        if (isalpha(s[i]))
+        if (isalpha(plain[i]))
         {
             for (int k = 0; k < n; k++)
             {
-                if (s[i] == 65 + k)
+                if (plain[i] == 65 + k)
                 {
                     printf("%c", toupper(argv[1][k]));
                 }
-                else if (s[i] == 97 + k)
+                else if (plain[i] == 97 + k)
                 {
                     printf("%c", tolower(argv[1][k]));
                 }
@@ -74,7 +74,7 @@ int main(int argc, string argv[])
         }
         else
         {
-            printf("%c", s[i]);
+            printf("%c", plain[i]);
         }
     }
     printf("\n");
